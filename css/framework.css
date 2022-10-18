@@ -1,0 +1,27 @@
+:root {
+  --bc-main-color: #00a2ff;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.bc-main-color {
+  background-color: var(--bc-main-color);
+}
+
+.r-border {
+  border-radius: 5px;
+}
+
+.p-5px {
+  padding: 5px;
+}
