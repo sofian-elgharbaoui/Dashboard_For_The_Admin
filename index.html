@@ -7,17 +7,17 @@
     <!-- Normalize CSS File -->
     <!-- <link rel="stylesheet" href="css/normalize.css" /> -->
     <!-- CSS Files -->
-    <link rel="stylesheet" href="../css/normalize.css" />
-    <link rel="stylesheet" href="../css/framework.css" />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <!-- Font Awesome Library -->
-    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap"
     />
     <title>Document</title>
   </head>
@@ -25,59 +25,108 @@
     <aside>
       <h1>Elzero</h1>
       <ul>
-        <li>Dashboard</li>
-        <li>Settings</li>
-        <li>Profile</li>
-        <li>Projects</li>
-        <li>Courses</li>
-        <li>Friends</li>
-        <li>Files</li>
-        <li>Plans</li>
+        <li>
+          <a href=""
+            ><i class="fa-solid fa-dashboard"></i>
+            <p>Dashboard</p></a
+          >
+        </li>
+        <li>
+          <a href=""
+            ><i class="fa-solid fa-s"></i>
+            <p>Settings</p></a
+          >
+        </li>
+        <li>
+          <a href=""
+            ><i class="fa-regular fa-user"></i>
+            <p>Profile</p></a
+          >
+        </li>
+        <li>
+          <a href=""
+            ><i class="fa-solid fa-link"></i>
+            <p>Projects</p></a
+          >
+        </li>
+        <li>
+          <a href=""
+            ><i class="fa-solid fa-chalkboard-teacher"></i>
+            <p>Courses</p></a
+          >
+        </li>
+        <li>
+          <a href=""
+            ><i class="fa-solid fa-user-friends"></i>
+            <p>Friends</p></a
+          >
+        </li>
+        <li>
+          <a href=""
+            ><i class="fa-regular fa-file"></i>
+            <p>Files</p></a
+          >
+        </li>
+        <li>
+          <a href=""
+            ><i class="fa-regular fa-id-card"></i>
+            <p>Plans</p></a
+          >
+        </li>
       </ul>
     </aside>
-    <div class="all-content">
+    <div class="content">
       <div class="top">
         <div class="search">
           <i class="fa-solid fa-search"></i>
           <input type="search" name="" id="" placeholder="Search Keyword" />
         </div>
         <i class="fa-regular fa-bell"></i>
-        <img src="../imgs/avatar.png" alt="" srcset="" />
+        <img src="imgs/avatar.png" alt="" srcset="" />
       </div>
       <div class="dashboard">
         <h1>Dashboard</h1>
         <div class="dashboard-items">
           <div>
-            <div class="">
+            <div class="welc-div">
               <h2>welcome</h2>
+              <p>elzero</p>
             </div>
-            <div>
-              <div class="">
-                <p>Osama elzero</p>
-                <p>80</p>
-                <p>$5800</p>
+            <div class="info">
+              <div>
+                <p>Osama elzero <span>developer</span></p>
+                <p>80 <span>projects</span></p>
+                <p>$5800 <span>earned</span></p>
               </div>
               <a href="#" class="">profile</a>
             </div>
           </div>
 
           <div>
-            <h1>quick draft</h1>
-            <input type="text" / placeholder="Title">
+            <div>
+              <h2>quick draft</h2>
+              <p>write a draft for your idea</p>
+            </div>
+            <input type="text" placeholder="Title" name="title" id="title" />
             <textarea name="" id="" placeholder="Your Thought"></textarea>
             <a href="#">save</a>
           </div>
 
           <div>
-            <h2>quick draft</h2>
+            <div>
+              <h2>yearly target</h2>
+              <p>targets of the year with progress</p>
+            </div>
             <div class="money">
               <div class="left-side">
                 <i class="fa-solid fa-dollar-sign"></i>
               </div>
               <div class="right-side">
                 <p>money</p>
-                <p>$20.000</p>
-                <div class="progress" data-prog="40"></div>
+                <b>$20.000</b>
+                <span class="progress">
+                  <span data-prog="40%"></span>
+                </span>
               </div>
             </div>
             <div class="projects">
@@ -86,41 +135,50 @@
               </div>
               <div class="right-side">
                 <p>Projects</p>
-                <p>$20.000</p>
-                <div class="progress" data-prog="40"></div>
+                <b>24</b>
+                <span class="progress">
+                  <span data-prog="55%"></span>
+                </span>
               </div>
             </div>
             <div class="team">
-              <div class="left-side"><i class="fa-regular fa-user"></i></div>
+              <div class="left-side">
+                <i class="fa-regular fa-user"></i>
+              </div>
               <div class="right-side">
                 <p>team</p>
-                <p>$20.000</p>
-                <div class="progress" data-prog="40"></div>
+                <b>12</b>
+                <span class="progress">
+                  <span data-prog="75%"></span>
+                </span>
               </div>
             </div>
           </div>
 
           <div>
-            <h2>tickets statistics</h2>
-            <div class="div">
+            <div>
+              <h2>tickets statistics</h2>
+              <p>everything about support tickets</p>
+            </div>
+            <div class="tickets-info">
               <div>
                 <i class="fa-regular fa-circle-check"></i>
-                <h2>2500</h2>
+                <h3>2500</h3>
                 <p>total</p>
               </div>
               <div>
-                <i class="fa-regular fa-"></i>
-                <h2>500</h2>
+                <i class="fa-solid fa-pause"></i>
+                <h3>500</h3>
                 <p>pending</p>
               </div>
               <div>
                 <i class="fa-regular fa-circle-check"></i>
-                <h2>1900</h2>
+                <h3>1900</h3>
                 <p>closed</p>
               </div>
               <div>
                 <i class="fa-sharp fa-solid fa-circle-xmark"></i>
-                <h2>100</h2>
+                <h3>100</h3>
                 <p>deleted</p>
               </div>
             </div>
@@ -129,33 +187,33 @@
           <div>
             <h2>latest news</h2>
             <div>
-              <img src="../imgs/news-01.png" alt="" />
+              <img src="imgs/news-01.png" alt="" />
               <div>
-                <h2>created SASS section</h2>
+                <h4>created SASS section</h4>
                 <p>new SASS examples & tutorials</p>
               </div>
               <p>3 days ago</p>
             </div>
             <div>
-              <img src="../imgs/news-02.png" alt="" />
+              <img src="imgs/news-02.png" alt="" />
               <div>
-                <h2>the design has changed</h2>
+                <h4>the design has changed</h4>
                 <p>A brand new website design</p>
               </div>
               <p>5 days ago</p>
             </div>
             <div>
-              <img src="../imgs/news-03.png" alt="" />
+              <img src="imgs/news-03.png" alt="" />
               <div>
-                <h2>team increased</h2>
+                <h4>team increased</h4>
                 <p>3 developers joined the team</p>
               </div>
               <p>7 days ago</p>
             </div>
             <div>
-              <img src="../imgs/news-04.png" alt="" />
+              <img src="imgs/news-04.png" alt="" />
               <div>
-                <h2>added payment gateway</h2>
+                <h4>added payment gateway</h4>
                 <p>many new payment gateways added</p>
               </div>
               <p>9 days ago</p>
@@ -165,93 +223,105 @@
           <div>
             <h2>latest tasks</h2>
             <div class="task">
-              <p>record one new video</p>
-              <p>record python create exe project</p>
+              <div>
+                <h4>record one new video</h4>
+                <p>record python create exe project</p>
+              </div>
+              <i class="fa-regular fa-trash-alt"></i>
             </div>
             <div class="task">
-              <p>write article</p>
-              <p>write low level vs high level languages</p>
+              <div>
+                <h4>write article</h4>
+                <p>write low level vs high level languages</p>
+              </div>
+              <i class="fa-regular fa-trash-alt"></i>
             </div>
             <div class="task">
-              <p>finish project</p>
-              <p>publish academy programming project</p>
+              <div>
+                <h4>finish project</h4>
+                <p>publish academy programming project</p>
+              </div>
+              <i class="fa-regular fa-trash-alt"></i>
+            </div>
+            <div class="task done">
+              <div>
+                <h4><del>attend the meeting</del></h4>
+                <p><del>attend the project business analysis meeting</del></p>
+              </div>
+              <i class="fa-regular fa-trash-alt"></i>
             </div>
             <div class="task">
-              <p>attend the meeting</p>
-              <p>attend the project business analysis meeting</p>
-            </div>
-            <div class="task">
-              <p>finish lesson</p>
-              <p>finish teaching flex box</p>
+              <div>
+                <h4>finish lesson</h4>
+                <p>finish teaching flex box</p>
+              </div>
+              <i class="fa-regular fa-trash-alt"></i>
             </div>
           </div>
 
           <div>
             <h2>top search items</h2>
-            <table>
-              <thead>
-                <tr>
-                  <td>Keyword</td>
-                  <td>search count</td>
-                </tr>
-              </thead>
-              <tr>
-                <td>programming</td>
-                <td>220</td>
-              </tr>
-              <tr>
-                <td>javaScript</td>
-                <td>180</td>
-              </tr>
-              <tr>
-                <td>PHP</td>
-                <td>160</td>
-              </tr>
-              <tr>
-                <td>code</td>
-                <td>145</td>
-              </tr>
-              <tr>
-                <td>design</td>
-                <td>110</td>
-              </tr>
-              <tr>
-                <td>logic</td>
-                <td>95</td>
-              </tr>
-              <tbody></tbody>
-            </table>
+            <div class="table">
+              <div>
+                <p>keyword</p>
+                <p>search count</p>
+              </div>
+              <div>
+                <p>programming</p>
+                <p>220</p>
+              </div>
+              <div>
+                <p>javaScript</p>
+                <p>180</p>
+              </div>
+              <div>
+                <p>PHP</p>
+                <p>160</p>
+              </div>
+              <div>
+                <p>code</p>
+                <p>145</p>
+              </div>
+              <div>
+                <p>design</p>
+                <p>110</p>
+              </div>
+              <div>
+                <p>logic</p>
+                <p>95</p>
+              </div>
+            </div>
           </div>
 
           <div>
             <h2>latest uploads</h2>
             <div>
-              <img src="../imgs/pdf.svg" alt="" />
+              <img src="imgs/pdf.svg" alt="" />
               <p>My-Pdf-File.pdf <span>Elzero</span></p>
               <p>2.9MB</p>
             </div>
             <div>
-              <img src="../imgs/avi.svg" alt="" />
+              <img src="imgs/avi.svg" alt="" />
               <p>My-Video-File.avi <span>Admin</span></p>
               <p>4.9MB</p>
             </div>
             <div>
-              <img src="../imgs/psd.svg" alt="" />
+              <img src="imgs/psd.svg" alt="" />
               <p>My-Psd-File.pdf <span>Osama</span></p>
               <p>4.5MB</p>
             </div>
             <div>
-              <img src="../imgs/zip.svg" alt="" />
+              <img src="imgs/zip.svg" alt="" />
               <p>My-Zip-File.pdf <span>User</span></p>
               <p>8.9MB</p>
             </div>
             <div>
-              <img src="../imgs/dll.svg" alt="" />
+              <img src="imgs/dll.svg" alt="" />
               <p>My-Dll-File.pdf<span>Admin</span></p>
               <p>4.9MB</p>
             </div>
             <div>
-              <img src="../imgs/pdf.svg" alt="" />
+              <img src="imgs/pdf.svg" alt="" />
               <p>My-Eps-File.pdf <span>Designer</span></p>
               <p>8.9MB</p>
             </div>
@@ -291,19 +361,17 @@
           <div>
             <h2>latest post</h2>
             <div>
-              <img src="../imgs/avatar.png" alt="" />
-              <p>
-                osama elzero <br />
-                about 3 hours ago
-              </p>
+              <img src="imgs/avatar.png" alt="" />
+              <div>
+                <h4>osama elzero</h4>
+                <p>about 3 hours ago</p>
+              </div>
             </div>
-            <hr />
             <p>
               you can fool all of the people some of the time, and some of the
               people all of the time, but you can't fool all of the people all
               of the time.
             </p>
-            <hr />
             <div>
               <p><i class="fa-regular fa-heart"></i> 1.8K</p>
               <p><i class="fa-regular fa-comments"></i> 550</p>
@@ -313,22 +381,22 @@
           <div>
             <h2>social media stats</h2>
             <div class="twitter">
-              <i class="fa-regular fa-twitter"></i>
+              <i class="fa-brands fa-twitter"></i>
               <p>90k followers</p>
               <a href="#" class="">follow</a>
             </div>
             <div class="facebook">
-              <i class="fa-regular fa-facebook"></i>
+              <i class="fa-brands fa-facebook-f"></i>
               <p>2M like</p>
               <a href="#" class="">like</a>
             </div>
             <div class="youtube">
-              <i class="fa-regular fa-youtube"></i>
+              <i class="fa-brands fa-youtube"></i>
               <p>1M subs</p>
               <a href="#" class="">subscribe</a>
             </div>
             <div class="linkedin">
-              <i class="fa-regular fa-twitter"></i>
+              <i class="fa-brands fa-twitter"></i>
               <p>70k followers</p>
               <a href="#" class="">follow</a>
             </div>
@@ -353,14 +421,14 @@
                   <td>ministry</td>
                   <td>$3500</td>
                   <td>
-                    <picture>
-                      <img src="../imgs/team-01.png" alt="" />
-                      <img src="../imgs/team-02.png" alt="" />
-                      <img src="../imgs/team-03.png" alt="" />
-                      <img src="../imgs/team-04.png" alt="" />
-                    </picture>
+                    <div>
+                      <img src="imgs/team-01.png" alt="" />
+                      <img src="imgs/team-02.png" alt="" />
+                      <img src="imgs/team-03.png" alt="" />
+                      <img src="imgs/team-04.png" alt="" />
+                    </div>
                   </td>
-                  <td><a href="#">pending</a></td>
+                  <td><a class="pen" href="#">pending</a></td>
                 </tr>
                 <tr>
                   <td>elzero shop</td>
@@ -368,13 +436,13 @@
                   <td>elzero company</td>
                   <td>$1500</td>
                   <td>
-                    <picture>
-                      <img src="../imgs/team-01.png" alt="" />
-                      <img src="../imgs/team-03.png" alt="" />
-                      <img src="../imgs/team-04.png" alt="" />
-                    </picture>
+                    <div>
+                      <img src="imgs/team-01.png" alt="" />
+                      <img src="imgs/team-03.png" alt="" />
+                      <img src="imgs/team-04.png" alt="" />
+                    </div>
                   </td>
-                  <td><a href="#">in progress</a></td>
+                  <td><a class="inp" href="#">in progress</a></td>
                 </tr>
                 <tr>
                   <td>bouba app</td>
@@ -382,12 +450,12 @@
                   <td>bouba</td>
                   <td>$800</td>
                   <td>
-                    <picture>
-                      <img src="../imgs/team-02.png" alt="" />
-                      <img src="../imgs/team-03.png" alt="" />
-                    </picture>
+                    <div>
+                      <img src="imgs/team-02.png" alt="" />
+                      <img src="imgs/team-03.png" alt="" />
+                    </div>
                   </td>
-                  <td><a href="#">completed</a></td>
+                  <td><a class="com" href="#">completed</a></td>
                 </tr>
                 <tr>
                   <td>mahmoud website</td>
@@ -395,12 +463,12 @@
                   <td>mahmoud</td>
                   <td>$600</td>
                   <td>
-                    <picture>
-                      <img src="../imgs/team-01.png" alt="" />
-                      <img src="../imgs/team-03.png" alt="" />
-                    </picture>
+                    <div>
+                      <img src="imgs/team-01.png" alt="" />
+                      <img src="imgs/team-03.png" alt="" />
+                    </div>
                   </td>
-                  <td><a href="#">completed</a></td>
+                  <td><a class="com" href="#">completed</a></td>
                 </tr>
                 <tr>
                   <td>sayed website</td>
@@ -408,12 +476,12 @@
                   <td>sayed</td>
                   <td>$300</td>
                   <td>
-                    <picture>
-                      <img src="../imgs/team-01.png" alt="" />
-                      <img src="../imgs/team-02.png" alt="" />
-                    </picture>
+                    <div>
+                      <img src="imgs/team-01.png" alt="" />
+                      <img src="imgs/team-02.png" alt="" />
+                    </div>
                   </td>
-                  <td><a href="#">rejected</a></td>
+                  <td><a class="rej" href="#">rejected</a></td>
                 </tr>
                 <tr>
                   <td>arena application</td>
@@ -421,14 +489,14 @@
                   <td>arena company</td>
                   <td>$2600</td>
                   <td>
-                    <picture>
-                      <img src="../imgs/team-01.png" alt="" />
-                      <img src="../imgs/team-02.png" alt="" />
-                      <img src="../imgs/team-03.png" alt="" />
-                      <img src="../imgs/team-04.png" alt="" />
-                    </picture>
+                    <div>
+                      <img src="imgs/team-01.png" alt="" />
+                      <img src="imgs/team-02.png" alt="" />
+                      <img src="imgs/team-03.png" alt="" />
+                      <img src="imgs/team-04.png" alt="" />
+                    </div>
                   </td>
-                  <td><a href="#">completed</a></td>
+                  <td><a class="com" href="#">completed</a></td>
                 </tr>
               </tbody>
             </table>
