@@ -63,12 +63,18 @@ aside h1::after {
 }
 
 aside ul li {
-  padding: 5px;
+  padding: 5px 5px 6px;
+  border-radius: 5px;
 }
 
-aside ul li p {
-  display: inline;
-  font-weight: 500;
+aside ul li:hover {
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+aside ul li:hover,
+li.active {
+  background-color: #eee;
 }
 
 aside ul li i {
@@ -76,13 +82,44 @@ aside ul li i {
   text-align: center;
   margin-right: 5px;
 }
-/* finished from the aside bar */
 
+aside ul li p {
+  display: inline;
+  font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  aside {
+    transition: 0.2s;
+    width: 100px;
+  }
+  aside h1::before,
+  aside h1::after {
+    transition: 0.2s;
+    display: none;
+  }
+  aside ul li {
+    transition: 0.2s;
+    text-align: center;
+  }
+  aside ul li p {
+    transition: 0.2s;
+    display: none;
+  }
+}
+/* finished from the aside bar */
 /* start styling the content section */
 .content {
   width: calc(100% - 200px);
   position: absolute;
   right: 0;
+}
+
+@media (max-width: 767px) {
+  .content {
+    width: calc(100% - 100px);
+    transition: 0.2s;
+  }
 }
 
 .content .top {
@@ -779,6 +816,7 @@ aside ul li i {
 /* 13 */
 .dashboard-items > div:nth-child(13) {
   grid-column: span 2;
+  overflow-x: auto;
 }
 
 @media (min-width: 1104px) {
