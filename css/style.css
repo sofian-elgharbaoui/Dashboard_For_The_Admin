@@ -815,8 +815,13 @@ aside ul li p {
 
 /* 13 */
 .dashboard-items > div:nth-child(13) {
-  grid-column: span 2;
   overflow-x: auto;
+}
+
+@media (min-width: 715px) {
+  .dashboard-items > div:nth-child(13) {
+    grid-column: span 2;
+  }
 }
 
 @media (min-width: 1104px) {
@@ -843,6 +848,7 @@ table thead {
 td {
   padding: 0.5rem;
 }
+
 td div {
   display: flex;
 }
@@ -854,9 +860,11 @@ td div img {
 td div img:not(:first-child) {
   margin-left: -15px;
 }
+
 td div img:hover {
   z-index: 1;
 }
+
 td a {
   padding: 3px 6px;
   border-radius: 5px;
