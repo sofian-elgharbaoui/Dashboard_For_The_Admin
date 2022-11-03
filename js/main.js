@@ -18,3 +18,9 @@ window.onresize = () => {
     logo.innerHTML = "E";
   } else logo.innerHTML = "Elzero";
 };
+
+// window.addEventListener("load", () => {
+if (window.innerWidth <= 767) {
+  logo.innerHTML = "E";
+} else logo.innerHTML = "Elzero";
+// });

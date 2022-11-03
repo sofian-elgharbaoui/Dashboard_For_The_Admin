@@ -17,7 +17,7 @@ img {
 
 body {
   text-transform: capitalize;
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* start styling the aside bar */
@@ -68,7 +68,7 @@ aside ul li {
 }
 
 aside ul li:hover {
-  transition: 0.2s;
+  transition: 0.1s;
   cursor: pointer;
 }
 
@@ -83,27 +83,26 @@ aside ul li i {
   margin-right: 5px;
 }
 
-aside ul li p {
-  display: inline;
+aside ul li span {
   font-weight: 500;
 }
 
 @media (max-width: 767px) {
   aside {
-    transition: 0.2s;
+    transition: 0.1s;
     width: 100px;
   }
   aside h1::before,
   aside h1::after {
-    transition: 0.2s;
+    transition: 0.1s;
     display: none;
   }
   aside ul li {
-    transition: 0.2s;
+    transition: 0.1s;
     text-align: center;
   }
-  aside ul li p {
-    transition: 0.2s;
+  aside ul li span {
+    transition: 0.1s;
     display: none;
   }
 }
@@ -118,7 +117,7 @@ aside ul li p {
 @media (max-width: 767px) {
   .content {
     width: calc(100% - 100px);
-    transition: 0.2s;
+    transition: 0.1s;
   }
 }
 
@@ -743,7 +742,7 @@ aside ul li p {
   display: grid;
   place-items: center;
   color: #fff;
-  transition: 0.2s;
+  transition: 0.1s;
 }
 
 .dashboard-items > div:nth-child(12) > div i:hover {
